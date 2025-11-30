@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Best Dentist in Jalpaiguri | Dental Surgeon & Painless RCT - Dr. S. Roy</title>
+    <meta name="description" content="Jalpaiguri's Oldest & Most Trusted Dental Clinic (27+ Years). Dr. S. Roy is a Sr. Dental Surgeon specializing in Complex Surgery, Implants, and Painless Root Canals.">
+    <meta name="keywords" content="Dental Surgeon Jalpaiguri, Best Dentist Jalpaiguri, Oral Surgeon, Complex Dental Surgery, Painless RCT, Oldest Dental Clinic Jalpaiguri, Dr Sudip Roy">
+    
+    <style>
+        :root {
+            --primary: #0056b3; /* Medical Blue */
+            --secondary: #25d366; /* WhatsApp Green */
+            --urgent: #d63031; /* Emergency Red */
+            --booking: #e67e22; /* Booking Orange */
+            --bg-light: #f4faff;
+            --text: #333;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; color: var(--text); padding-bottom: 80px; line-height: 1.6; }
+        h1, h2, h3, h4 { color: var(--primary); line-height: 1.2; }
+        a { text-decoration: none; }
+
+        /* HEADER */
+        header { background: white; padding: 10px 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.1rem; font-weight: 800; color: var(--primary); text-transform: uppercase; }
+        .header-actions { display: flex; gap: 10px; }
+        .nav-btn { color: white; padding: 8px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; white-space: nowrap; }
+        .btn-call-head { background: var(--primary); }
+        .btn-book-head { background: var(--booking); }
+
+        /* HERO SECTION */
+        .hero { background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 40px 20px; text-align: center; }
+        .hero h1 { font-size: 1.8rem; margin-bottom: 15px; font-weight: 900; }
+        .hero p { font-size: 1.1rem; color: #444; margin-bottom: 25px; font-weight: 500; max-width: 600px; margin-left: auto; margin-right: auto; }
+        
+        /* AI BUTTON */
+        .ai-btn { background: linear-gradient(to right, #0056b3, #004494); color: white; padding: 15px 30px; font-size: 1.1rem; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 5px 15px rgba(0,86,179,0.3); font-weight: bold; display: inline-block; animation: pulse 2s infinite; }
+
+        /* FEATURES ROW */
+        .features { padding: 30px 20px; background: white; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .feat-item { text-align: center; width: 100%; max-width: 300px; background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .feat-icon { font-size: 1.5rem; display: block; margin-bottom: 5px; }
+        .feat-title { font-weight: 800; color: var(--primary); display: block; margin-bottom: 5px; }
+
+        /* SECTIONS */
+        .section { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 1.8rem; margin-bottom: 20px; font-weight: 800; }
+
+        /* ABOUT TEXT */
+        .about-box { background: #fff; padding: 25px; border-radius: 10px; border-left: 5px solid var(--primary); box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: left; }
+        .about-box p { margin-bottom: 15px; }
+
+        /* APP 2: PAIN SLIDER */
+        .pain-box { background: #fff5f5; padding: 25px; border-radius: 15px; border: 1px solid #ffcccc; text-align: center; }
+        .slider { -webkit-appearance: none; width: 100%; height: 10px; border-radius: 5px; background: linear-gradient(to right, #2ecc71, #f1c40f, #e74c3c); outline: none; margin: 20px 0; }
+        .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 25px; height: 25px; border-radius: 50%; background: #fff; border: 2px solid #555; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+
+        /* APP 3: CALCULATOR */
+        .calc-box { background: #fff; padding: 20px; border-radius: 15px; border: 1px solid #e0e0e0; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; margin-bottom: 15px; }
+        
+        /* FOOTER SEO & MAP */
+        .seo-footer { background: #f8f9fa; padding: 30px 20px; font-size: 0.9rem; color: #666; text-align: center; }
+        iframe { width: 100%; height: 350px; border: 0; border-radius: 10px; margin-top: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background-color: #eee; }
+
+        /* STICKY CTA */
+        .sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: white; border-top: 1px solid #eee; display: flex; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 999; }
+        .footer-btn { flex: 1; padding: 12px 5px; text-align: center; font-weight: bold; font-size: 0.9rem; color: white; border-right: 1px solid rgba(255,255,255,0.2); }
+        .btn-call { background: var(--primary); }
+        .btn-book { background: var(--booking); }
+        .btn-wa { background: var(--secondary); border: none; }
+
+        /* MODAL */
+        #dentalAppModal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; backdrop-filter: blur(4px); }
+        .modal-content { background: white; width: 90%; max-width: 500px; margin: 10% auto; padding: 25px; border-radius: 15px; position: relative; }
+        .option-btn { background: #f0f7ff; border: 1px solid #cce5ff; padding: 14px; border-radius: 10px; width: 100%; text-align: left; font-size: 16px; margin-bottom: 10px; font-weight: 600; cursor: pointer; }
+        
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Dr. S. Roy</div>
+        <div class="header-actions">
+            <a href="https://dentistjalpaiguri.github.io/appointment.html" class="nav-btn btn-book-head">📅 Book Online</a>
+            <a href="tel:+918918935056" class="nav-btn btn-call-head">📞 Call</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Best Dentist in Jalpaiguri <br><span style="font-size: 0.7em; color: #555; font-weight: 500;">Sr. Dental Surgeon & Painless RCT</span></h1>
+        <p>Immediate Relief for Toothache, Complex Surgery & Gum Bleeding. Experience 27+ Years of Trust with Dr. S. Roy.</p>
+        
+        <button onclick="openDentalApp()" class="ai-btn">
+            🤖 Start Free Dental Checkup
+        </button>
+    </section>
+
+    <div class="features">
+        <div class="feat-item">
+            <span class="feat-icon">⚡</span>
+            <span class="feat-title">Painless Single-Sitting RCT</span>
+            Save time and avoid pain with modern rotary endodontics.
+        </div>
+        <div class="feat-item">
+            <span class="feat-icon">🏥</span>
+            <span class="feat-title">Complex Dental Surgery</span>
+            Expert removal of wisdom teeth and cysts by a Sr. Surgeon.
+        </div>
+        <div class="feat-item">
+            <span class="feat-icon">💰</span>
+            <span class="feat-title">Affordable Family Dentistry</span>
+            Transparent pricing for fillings, cleaning, and dentures.
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="pain-box">
+            <h3 style="color: var(--urgent); margin-top: 0;">🚑 Check My Pain Severity</h3>
+            <p style="font-size: 14px; color: #555;">Drag the slider to match your pain level:</p>
+            <span id="emojiDisplay" style="font-size: 60px; display: block; margin: 15px 0;">😐</span>
+            <input type="range" min="1" max="10" value="5" class="slider" id="painRange" oninput="analyzePain()">
+            <div id="painResult" style="display: none; margin-top: 20px; animation: fadeIn 0.3s;">
+                <strong id="diagnosisTitle" style="font-size: 1.2rem; display: block;"></strong>
+                <p id="diagnosisText" style="font-size: 0.9rem; color: #666;"></p>
+                <a id="painWaLink" href="#" style="display: block; background: var(--urgent); color: white; padding: 12px; border-radius: 8px; font-weight: bold; margin-top: 10px;">🚨 Get Relief Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Why Dr. S. Roy is the Top-Rated Choice</h2>
+        <div class="about-box">
+            <p><strong>Dr. Sudip Roy – 27+ Years of Trust.</strong><br>
+            Sr. Consultant Oral & Cosmetic Dental Surgeon | Certified Dental Implantologist.</p>
+            <p>Formerly attached to <b>North Bengal Dental College</b> and <b>Eastern Railway Hospital</b>, Dr. Roy brings over 2 decades of medical expertise to Jalpaiguri.</p>
+            <p>✅ <b>20,000+ Happy Smiles</b><br>✅ Painless Root Canals (RCT)<br>✅ Advanced Dental Implants</p>
+        </div>
+    </section>
+
+    <section class="section" style="background: #f9f9f9;">
+        <h2 class="section-title">💰 Check Treatment Rates</h2>
+        <div style="text-align: center; margin-bottom: 20px; font-size: 0.95rem; color: #555; max-width: 600px; margin: 0 auto 20px auto;">
+            "We offer <b>tiered pricing options</b> ranging from Economy Care to Premium Laser Treatments. We have a plan for your budget."
+        </div>
+
+        <div class="calc-box">
+            <select id="treatmentSelect" onchange="calculateTieredCost()">
+                <option value="0">▼ Select Treatment...</option>
+                <option value="rct">Root Canal (RCT) - Pain Relief</option>
+                <option value="crown">Dental Cap / Crown</option>
+                <option value="cleaning">Teeth Cleaning (Scaling)</option>
+                <option value="extraction">Tooth Removal</option>
+                <option value="fill">Tooth Filling</option>
+            </select>
+
+            <div id="priceDisplay" style="display: none; text-align: center; animation: fadeIn 0.4s;">
+                <div style="background: #eaffea; border: 1px dashed #28a745; padding: 15px; border-radius: 10px;">
+                    <p style="margin:0; font-size: 12px; font-weight: bold; color: #555;">ECONOMY PACKAGE STARTS FROM:</p>
+                    <h2 id="priceRange" style="color: #28a745; margin: 5px 0 0 0; font-size: 2.5rem;"></h2>
+                    <p style="font-size: 12px; margin-top: 5px;">+ Doctor Fees & Material Charges</p>
+                </div>
+                <div id="doctorNote" style="font-size: 12px; color: #856404; background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px; text-align: left;"></div>
+                <a id="waLink" href="#" class="nav-btn btn-call-head" style="display: block; margin-top: 15px; text-align: center;">💬 Get Exact Quote (WhatsApp)</a>
+            </div>
+        </div>
+    </section>
+
+    <div style="text-align: center; padding: 40px 20px; background: #f0f8ff; border-top: 1px solid #d1e3ff; margin-bottom: 0;">
+        <h4 style="color: #0056b3; margin-bottom: 20px; font-size: 1.1rem; font-weight: 800;">CONNECT WITH DR. SUDIP ROY</h4>
+        
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 20px;">
+            <a href="https://www.facebook.com/bestdentalclinic.Jalpaiguridentalclinic.smile?mibextid=ZbWKwL" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="35" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/drsudiproy-best-dentalsurgeon-jalpaiguri" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width="35" alt="LinkedIn">
+            </a>
+            <a href="https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist" target="_blank">
+                <img src="https://www.practostatic.com/web-assets/images/favicon.png" width="35" style="border-radius: 5px;" alt="Practo">
+            </a>
+            <a href="https://jsdl.in/DT-99SZ3I1WFPL" target="_blank" style="text-decoration:none; font-weight:bold; color:#d63031; font-size:12px; display:flex; align-items:center; background:white; padding:5px 10px; border-radius:5px; border:1px solid #ddd;">
+                JustDial
+            </a>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">📍 Visit Our Clinic</h2>
+        <p style="text-align: center;">Pahari Para, Near V-Mart, Opp. ANGIRA Apartment, Jalpaiguri</p>
+        
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?q=Dr.+S.+Roy's+SMILE+Dental+Clinic,+Jalpaiguri&output=embed"></iframe>
+        
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9" target="_blank" style="display: inline-block; background: #fff; color: #0056b3; border: 1px solid #0056b3; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem;">
+                📍 Open Directions in Google Maps
+            </a>
+        </div>
+    </section>
+
+    <div style="text-align: center; padding: 20px; background: #fff; border-top: 1px solid #eee; margin-bottom: 70px;">
+        <p style="font-size: 13px; color: #555;">
+            Looking for a Digital Smile Makeover? <br>
+            <a href="https://smilemakeoverjalpaiguri.github.io/" target="_blank" style="color: #d4af37; font-weight: bold; text-decoration: none;">
+                ✨ Visit Dr. Roy's Premium Smile Studio
+            </a>
+        </p>
+    </div>
+
+    <div class="sticky-footer">
+        <a href="tel:+918918935056" class="footer-btn btn-call">📞 Call</a>
+        <a href="https://dentistjalpaiguri.github.io/appointment.html" class="footer-btn btn-book">📅 Book</a>
+        <a href="https://wa.me/918918935056?text=Hi%20Dr.%20Roy,%20I%20want%20to%20book%20an%20appointment." class="footer-btn btn-wa">💬 WhatsApp</a>
+    </div>
+
+    <script>
+        var myPhone = "918918935056";
+
+        function openDentalApp() { document.getElementById('dentalAppModal').style.display = 'block'; }
+        function closeDentalApp() { document.getElementById('dentalAppModal').style.display = 'none'; resetApp(); }
+        function resetApp() { document.getElementById('appStep1').style.display = 'block'; document.getElementById('appStep2').style.display = 'none'; }
+        
+        function runDiagnosis(symptom) {
+            document.getElementById('appStep1').style.display = 'none';
+            document.getElementById('appStep2').style.display = 'block';
+            var title = document.getElementById('resultTitle');
+            var text = document.getElementById('resultText');
+            var btn = document.getElementById('resultAction');
+
+            if(symptom === 'pain') {
+                title.innerText = "Possible Root Infection";
+                text.innerHTML = "We specialize in <b>Painless Laser RCT</b>. You likely need immediate relief.";
+                btn.href = "https://wa.me/" + myPhone + "?text=URGENT: I have tooth pain and need Painless RCT.";
+            } else if(symptom === 'gums') {
+                title.innerText = "Early Gum Disease";
+                text.innerHTML = "We recommend <b>Ultrasonic Cleaning</b>. Fast, painless, and stops bleeding.";
+                btn.href = "https://wa.me/" + myPhone + "?text=Hi, I have bleeding gums. I want to book a Cleaning.";
+            } else if(symptom === 'broken') {
+                title.innerText = "Structure Damage";
+                text.innerHTML = "We can restore this with a <b>Zirconia Crown</b>. It looks 100% natural.";
+                btn.href = "https://wa.me/" + myPhone + "?text=Hi, I have a broken tooth. Can I get an estimate?";
+            } else {
+                title.innerText = "Preventative Care";
+                text.innerHTML = "Regular checkups save money. We use Digital Scanners to find issues early.";
+                btn.href = "https://wa.me/" + myPhone + "?text=Hi, I want to book a general checkup.";
+            }
+        }
+
+        function analyzePain() {
+            var val = document.getElementById('painRange').value;
+            var emoji = document.getElementById('emojiDisplay');
+            var res = document.getElementById('painResult');
+            var title = document.getElementById('diagnosisTitle');
+            var txt = document.getElementById('diagnosisText');
+            var btn = document.getElementById('painWaLink');
+
+            if(val <= 3) { emoji.innerText = "🙂"; } else if(val <= 7) { emoji.innerText = "😣"; } else { emoji.innerText = "😭"; }
+
+            if(val > 7) {
+                title.innerText = "🚨 EMERGENCY: Nerve Pain";
+                title.style.color = "#c0392b";
+                txt.innerHTML = "You likely need <b>Painless Laser Treatment</b> immediately.";
+                btn.href = "https://wa.me/" + myPhone + "?text=URGENT: Pain Level " + val + ". I need Emergency Laser treatment.";
+                res.style.display = "block";
+            } else if(val > 3) {
+                title.innerText = "⚡ Deep Cavity Warning";
+                title.style.color = "#e67e22";
+                txt.innerHTML = "Don't wait. A filling now can save you from RCT later.";
+                btn.href = "https://wa.me/" + myPhone + "?text=Hi, I have moderate pain (" + val + "). I need a checkup.";
+                res.style.display = "block";
+            } else {
+                res.style.display = "none";
+            }
+        }
+
+        function calculateTieredCost() {
+            var val = document.getElementById('treatmentSelect').value;
+            var display = document.getElementById('priceDisplay');
+            var range = document.getElementById('priceRange');
+            var note = document.getElementById('doctorNote');
+            var link = document.getElementById('waLink');
+
+            var data = {
+                "rct": { p: "₹1,500*", n: "Note: Basic Manual RCT. Painless Laser RCT charges vary.", m: "Hi, I saw RCT starts @ 1500. Tell me about Laser options." },
+                "crown": { p: "₹1,500*", n: "Note: Basic Metal Crown. MRI-Safe Zirconia charges vary.", m: "Hi, I saw Crowns start @ 1500. Tell me about Zirconia options." },
+                "cleaning": { p: "₹500*", n: "Note: Basic Cleaning. Deep cleaning charges vary.", m: "Hi, I want to book a Cleaning (Starts @ 500)." },
+                "extraction": { p: "₹500*", n: "Note: Simple loose tooth. Wisdom tooth surgery charges vary.", m: "Hi, I need a tooth removal (Starts @ 500)." },
+                "fill": { p: "₹500*", n: "Note: Basic Cement. Laser Composite charges vary.", m: "Hi, I need a filling (Starts @ 500)." }
+            };
+
+            if(val !== "0") {
+                range.innerText = data[val].p;
+                note.innerText = data[val].n;
+                link.href = "https://wa.me/" + myPhone + "?text=" + encodeURIComponent(data[val].m);
+                display.style.display = "block";
+            } else {
+                display.style.display = "none";
+            }
+        }
+    </script>
+
+    <div id="dentalAppModal">
+        <div class="modal-content">
+            <span onclick="closeDentalApp()" style="position: absolute; top: 15px; right: 20px; font-size: 28px; cursor: pointer;">×</span>
+            <div id="appStep1">
+                <h3 style="text-align: center; margin-top: 0;">What is bothering you?</h3>
+                <div style="display: grid; gap: 10px; margin-top: 20px;">
+                    <button onclick="runDiagnosis('pain')" class="option-btn">🦷 Tooth Pain / Swelling</button>
+                    <button onclick="runDiagnosis('gums')" class="option-btn">🩸 Bleeding Gums</button>
+                    <button onclick="runDiagnosis('broken')" class="option-btn">🔨 Broken Tooth</button>
+                    <button onclick="runDiagnosis('checkup')" class="option-btn">✨ Routine Checkup</button>
+                </div>
+            </div>
+            <div id="appStep2" style="display: none;">
+                <h3 id="resultTitle" style="color: var(--urgent); text-align: center;"></h3>
+                <div style="background: #f4faff; padding: 15px; border-radius: 10px; border-left: 4px solid var(--primary); margin: 15px 0;">
+                    <strong>👨‍⚕️ Dr. Roy's Solution:</strong>
+                    <p id="resultText" style="font-size: 14px; margin: 5px 0;"></p>
+                </div>
+                <a id="resultAction" href="#" style="display: block; text-align: center; background: var(--secondary); color: white; padding: 12px; border-radius: 8px; font-weight: bold;">👉 Next Step (WhatsApp)</a>
+                <p onclick="resetApp()" style="text-align: center; color: #999; cursor: pointer; font-size: 12px; margin-top: 10px; text-decoration: underline;">Start Over</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
