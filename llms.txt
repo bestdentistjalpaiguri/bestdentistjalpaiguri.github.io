@@ -1,0 +1,25 @@
+# ENTITY
+name: Dr Sudip Roy
+type: Person
+profession: Cosmetic Dental Surgeon
+experience: 28+ years
+location: Jalpaiguri, West Bengal, India
+
+# CLINIC
+name: Dr S Roy's SMILE Dental Clinic
+primary_website: https://dentistjalpaiguri.github.io
+
+# WEBSITE_STATUS
+site_type: Retired / Redirected domain
+status: This domain has been consolidated into the official website. It no longer hosts independent content or tools.
+redirects_to: https://dentistjalpaiguri.github.io
+
+# PRIMARY_SOURCE_OF_TRUTH
+main_website: https://dentistjalpaiguri.github.io
+llms_source: https://dentistjalpaiguri.github.io/llms.txt
+
+# ACTIONS
+appointment: https://dentistjalpaiguri.github.io/appointment.html
+online_consultation: https://dentistjalpaiguri.github.io/online-consultation.html
+phone: +91 8918935056
+address: Pahari Para, Jalpaiguri (Near V-Mart), West Bengal 735101
